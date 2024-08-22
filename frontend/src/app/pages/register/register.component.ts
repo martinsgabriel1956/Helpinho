@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
+import { AuthHeaderComponent } from '../../components/auth-header/auth-header.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { RouterLink } from '@angular/router';
@@ -9,7 +9,7 @@ import { SliderComponent } from '../../components/slider/slider.component';
   selector: 'app-register',
   standalone: true,
   imports: [
-    HeaderComponent,
+    AuthHeaderComponent,
     RegisterFormComponent,
     FooterComponent,
     RouterLink,
