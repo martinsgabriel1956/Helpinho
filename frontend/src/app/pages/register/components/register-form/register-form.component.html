@@ -1,0 +1,54 @@
+<form action="" class="">
+  <div class="flex flex-col gap-5">
+    <app-input
+      [id]="'name'"
+      [labelText]="'Nome'"
+      [placeholder]="'Como podemos lhe chamar?'"
+      [type]="'email'"
+    />
+    <app-input
+      [id]="'email'"
+      [labelText]="'Email'"
+      [placeholder]="'Seu melhor email'"
+      [type]="'email'"
+    />
+    <div class="flex items-center justify-between gap-5">
+      <app-input
+        [id]="'document'"
+        [labelText]="'CPF/CNPJ'"
+        [placeholder]="'000.000.000-00'"
+      />
+      <app-input
+        [id]="'birthdate'"
+        [labelText]="'Data de nascimento'"
+        [type]="'date'"
+      />
+    </div>
+    <div class="">
+      <app-input
+        [id]="'password'"
+        [labelText]="'Senha'"
+        [placeholder]="'••••••••'"
+        [type]="'password'"
+      />
+      <span class="inline-block text-sm text-light-neutral-600 mt-[0.38rem]"
+        >No mínimo 8 caracteres, Letras e número</span
+      >
+    </div>
+  </div>
+  <div class="flex flex-col gap-4 mt-6">
+    <button
+      type="submit"
+      class="w-full py-[0.62rem] px-[1.12rem] font-semibold text-white bg-light-primary-600 rounded-lg hover:bg-light-primary-700 text-base"
+    >
+      Cadastre-se Grátis
+    </button>
+    <button
+      type="button"
+      class="w-full flex items-center justify-center gap-3 font-semibold leading-6 rounded-lg py-[0.62rem] px-4 text-base text-light-neutral-700 border border-light-neutral-300"
+    >
+      <img src="../../../assets/icons/google.svg" alt="Logo Google" />
+      Continuar com Google
+    </button>
+  </div>
+</form>

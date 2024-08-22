@@ -1,22 +1,20 @@
 import { Component } from '@angular/core';
-import { InputComponent } from '../../components/input/input.component';
-import { LoginFormComponent } from './components/login-form/login-form.component';
 import { HeaderComponent } from '../../components/header/header.component';
+import { RegisterFormComponent } from './components/register-form/register-form.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { RouterLink } from '@angular/router';
 import { SliderComponent } from '../../components/slider/slider.component';
 
 @Component({
-  selector: 'login-page',
+  selector: 'app-register',
   standalone: true,
   imports: [
-    InputComponent,
-    LoginFormComponent,
     HeaderComponent,
+    RegisterFormComponent,
     FooterComponent,
     RouterLink,
     SliderComponent,
   ],
-  templateUrl: './login.component.html',
+  templateUrl: './register.component.html',
 })
-export class LoginComponent {}
+export class RegisterComponent {}

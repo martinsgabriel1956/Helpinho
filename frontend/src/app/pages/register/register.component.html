@@ -3,27 +3,24 @@
     <section class="w-full p-8">
       <app-header />
       <div class="md:max-w-[400px] w-full mx-auto md:pt-[8.69rem]">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col max-sm:text-center">
           <h1
-            class="text-3xl font-semibold leading-[2.375rem] text-light-neutral-900"
+            class="text-3xl font-semibold leading-[2.375rem] text-light-neutral-900 mb-3"
           >
-            Bem vindo de volta
+            Registre-se grátis
           </h1>
           <span class="text-base font-normal mb-8 text-light-neutral-700">
-            Entre e ajude os helpinho de hoje
+            Seja bem vindo! Estamos felizes em te-lo na nossa rede apoio
           </span>
         </div>
-        <app-login-form />
+        <app-register-form />
         <div
           class="flex items-center justify-center w-full pb-[4.5rem] md:pb-[8.69rem]"
         >
-          <a
-            class="inline-block mt-8 text-sm font-normal"
-            routerLink="/register"
-          >
-            Ainda não faz conhece o helpinho?
+          <a routerLink="/login" class="inline-block mt-8 text-sm font-normal">
+            Ja tem uma conta?
             <strong class="font-semibold text-light-primary-700">
-              Registre-se grátis
+              Faça login
             </strong>
           </a>
         </div>
