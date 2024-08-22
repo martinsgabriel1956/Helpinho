@@ -3,6 +3,7 @@ import { InputComponent } from '../../components/input/input.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'login-page',
@@ -12,6 +13,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
     LoginFormComponent,
     HeaderComponent,
     FooterComponent,
+    RouterLink,
   ],
   templateUrl: './login.component.html',
 })
