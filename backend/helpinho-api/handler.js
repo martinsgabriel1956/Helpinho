@@ -1,10 +1,10 @@
-const express = require("express");
-const serverless = require("serverless-http");
-const { default: appRoutes } = require("./src/router");
+import express, { json } from "express";
+import serverless from "serverless-http";
+import appRoutes from "./src/routes/index.js";
 
 const app = express();
 
-app.use(express.json());
+app.use(json());
 app.use(appRoutes);
 
-exports.handler = serverless(app);
+export const handler = serverless(app);
