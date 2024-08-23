@@ -1,0 +1,57 @@
+<header class="flex items-center justify-between py-[1.12rem] px-8 md:px-20">
+  @if (screenWidth >= 768) {
+  <img src="../../../assets/logo.svg" alt="Logo do Helpinho" />
+  <nav class="flex items-center gap-[3.69rem]">
+    <a class="text-base font-semibold text-light-neutral-400" routerLink="">
+      Home
+    </a>
+    <a class="text-base font-semibold text-light-neutral-400" routerLink="">
+      Pesquisa
+    </a>
+    <a class="text-base font-semibold text-light-neutral-400" routerLink="">
+      Sobre
+    </a>
+  </nav>
+  } @else {
+  <img
+    src="../../../assets/icons/hands.svg"
+    alt="Icone de duas mãos se tocando, uma vermelha e outra amarela"
+  />
+  }
+
+  <div class="flex items-center gap-3">
+    @if (!isAuthenticated) {
+    <a
+      routerLink="/register"
+      class="flex items-center justify-center gap-3 font-semibold leading-6 rounded-xl py-2 px-[0.88rem] text-light-primary-500 text-sm border border-light-primary-100 bg-light-primary-100"
+    >
+      Registre-se grátis
+    </a>
+    <a
+      routerLink="/login"
+      class="py-[0.62rem] px-[1.12rem] font-semibold text-white bg-light-primary-600 rounded-lg hover:bg-light-primary-700 text-base"
+    >
+      Login
+    </a>
+    } @else {
+    <div class="flex items-center w-full gap-[0.19rem]">
+      <img class="w-full h-full" src="../../../assets/avatar.png" alt="" />
+
+      <div class="flex flex-col">
+        <span class="text-sm font-semibold text-light-neutral-700">
+          Olívia Rhye
+        </span>
+        <span class="text-xs leading-5 text-light-neutral-600">
+          olivia&#64;untitledui.com
+        </span>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="p-2 font-semibold text-white bg-light-primary-600 rounded-xl hover:bg-light-primary-700 text-base"
+    >
+      <img src="../../../assets/icons/logout.svg" alt="Icone de logout" />
+    </button>
+    }
+  </div>
+</header>

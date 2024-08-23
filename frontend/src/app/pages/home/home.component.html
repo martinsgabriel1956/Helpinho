@@ -1,0 +1,203 @@
+<main class="w-full h-screen">
+  <section
+    class="w-full h-screen [background:linear-gradient(292deg,_#FF648E_-35.02%,_#FFF0F3_78.96%)]"
+  >
+    <app-home-header />
+
+    <div class="flex flex-col md:flex-row gap-2 w-full">
+      <div class="pt-[4.25rem] w-full">
+        <div class="pl-4">
+          @if (screenWidth <= 768) {
+          <swiper-container
+            navigation="false"
+            loop="false"
+            slides-per-view="2"
+            space-between="26"
+          >
+            <swiper-slide
+              class="flex items-center gap-[0.38rem] py-3 px-6 rounded-xl [background:rgba(255,_255,_255,_0.40)] w-full"
+            >
+              <img
+                src="../../../../../assets/icons/check.svg"
+                alt="Icone de check"
+              />
+              <span class="text-light-primary-700">Registro grátis</span>
+            </swiper-slide>
+            <swiper-slide
+              class="flex items-center gap-[0.38rem] py-3 px-6 rounded-xl [background:rgba(255,_255,_255,_0.40)] w-full"
+            >
+              <img
+                src="../../../../../assets/icons/check.svg"
+                alt="Icone de check"
+              />
+              <span class="text-light-primary-700">Sem taxas</span>
+            </swiper-slide>
+            <swiper-slide
+              class="flex items-center gap-[0.38rem] py-3 px-6 rounded-xl [background:rgba(255,_255,_255,_0.40)] w-full"
+            >
+              <img
+                src="../../../../../assets/icons/check.svg"
+                alt="Icone de check"
+              />
+              <span class="text-light-primary-700">Rápido e prático</span>
+            </swiper-slide>
+          </swiper-container>
+          } @else {
+          <div
+            class="flex items-start rounded-[1.25rem] [background:rgba(255,_255,_255,_0.40)] py-4 px-[0.875rem] gap-[0.12rem]"
+          >
+            <div
+              class="flex items-center gap-[0.38rem] py-2 px-3 border border-red-500"
+            >
+              <img
+                src="../../../../../assets/icons/check.svg"
+                alt="Icone de check"
+              />
+              <span class="text-light-primary-700">Sem taxas</span>
+            </div>
+            <div
+              class="flex items-center gap-[0.38rem] py-2 px-3 border border-red-500"
+            >
+              <img
+                src="../../../../../assets/icons/check.svg"
+                alt="Icone de check"
+              />
+              <span class="text-light-primary-700">Sem taxas</span>
+            </div>
+            <div
+              class="flex items-center gap-[0.38rem] py-2 px-3 border border-red-500"
+            >
+              <img
+                src="../../../../../assets/icons/check.svg"
+                alt="Icone de check"
+              />
+              <span class="text-light-primary-700">Sem taxas</span>
+            </div>
+          </div>
+          }
+        </div>
+
+        <div class="px-8 pt-4">
+          <div
+            class="flex flex-col gap-6 font-openSans mb-8 max-w-[39.6875rem] w-full"
+          >
+            <h1
+              class="text-light-neutral-800 text-[2rem] tracking-[-0.06rem] font-light md:text-5xl md:tracking-[-0.09rem]"
+            >
+              Faça a diferença com apenas
+              <strong class="text-light-primary-600 font-semibold"
+                >um helpinho</strong
+              >
+            </h1>
+            <p class="text-light-neutral-600 text-base md:text-2xl">
+              Os helpinho podem parecer pequenos, mas juntos fazem a
+              <strong class="text-light-primary-600">
+                diferença na vida de todos
+              </strong>
+            </p>
+          </div>
+          <a
+            class="bg-light-primary-500 py-[0.62rem] px-[1.69rem] text-white font-semibold rounded-2xl w-full md:py-3 md:px-5"
+            routerLink="/register"
+          >
+            Registre-se grátis
+          </a>
+        </div>
+      </div>
+      <div class="bg-slate-600 w-full h-full"></div>
+    </div>
+    <!-- <div
+      class="[background: url('../../../../../assets/hero-mobile.png')] md:[background: url('../../../../../assets/hero.png')] bg-cover bg-no-repeat w-full"
+    ></div> -->
+  </section>
+  <section class="px-[1.32rem] py-12 md:py-32 md:px-16 bg-white">
+    <div class="flex flex-col">
+      <div class="py-[1.56rem] max-w-[300px] w-full">
+        <div class="flex items-start gap-5">
+          <h3
+            class="text-light-primary-500 text-[2.5rem] font-bold leading-[3.125rem] tracking-[0.0125rem]"
+          >
+            1.
+          </h3>
+          <div class="max-w-[201px] w-full">
+            <h5
+              class="text-light-primary-950 font-semibold text-sm leading-4 tracking-[0.0125rem]"
+            >
+              Escolha
+            </h5>
+            <p
+              class="text-sm leading-4 tracking-[0.0125rem] text-light-neutral-400 mt-[0.31rem]"
+            >
+              Escolha um helpinho que deseja ajudar
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-[1.56rem] max-w-[300px] w-full">
+        <div class="flex items-start gap-5 pl-4">
+          <h3
+            class="text-light-primary-500 text-[2.5rem] font-bold leading-[3.125rem] tracking-[0.0125rem]"
+          >
+            2.
+          </h3>
+          <div class="max-w-[155px] w-full">
+            <h5
+              class="text-light-primary-950 font-semibold text-sm leading-4 tracking-[0.0125rem]"
+            >
+              Doe
+            </h5>
+            <p
+              class="text-sm leading-4 tracking-[0.0125rem] text-light-neutral-400 mt-[0.31rem]"
+            >
+              O valor é você quem decide e ele vai
+              <span class="text-light-primary-500">todo</span> para quem
+              escolher
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-[1.56rem] max-w-[300px] w-full">
+        <div class="flex items-start gap-5 pl-8">
+          <h3
+            class="text-light-primary-500 text-[2.5rem] font-bold leading-[3.125rem] tracking-[0.0125rem]"
+          >
+            3.
+          </h3>
+          <div class="max-w-[160px] w-full">
+            <h5
+              class="text-light-primary-950 font-semibold text-sm leading-4 tracking-[0.0125rem]"
+            >
+              Aproveite
+            </h5>
+            <p
+              class="text-sm leading-4 tracking-[0.0125rem] text-light-neutral-400 mt-[0.31rem]"
+            >
+              Doar gera felicidade para você e para quem recebeu.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-[1.56rem] max-w-[300px] w-full">
+        <div class="flex items-start gap-5 pl-12">
+          <h3
+            class="text-light-primary-500 text-[2.5rem] font-bold leading-[3.125rem] tracking-[0.0125rem]"
+          >
+            4.
+          </h3>
+          <div class="max-w-[201px] w-full">
+            <h5
+              class="text-light-primary-950 font-semibold text-sm leading-4 tracking-[0.0125rem]"
+            >
+              Acompanhe
+            </h5>
+            <p
+              class="text-sm leading-4 tracking-[0.0125rem] text-light-neutral-400 mt-[0.31rem]"
+            >
+              Fique ligado, acompanhe se o helpinho alcançou o objetivo
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

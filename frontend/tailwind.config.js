@@ -1,3 +1,5 @@
+import moduleName from "./src/assets/hero.png";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
@@ -164,6 +166,12 @@ module.exports = {
             950: "#FFF0F1",
           },
         },
+      },
+      fontFamily: {
+        openSans: ["Open Sans", "sans-serif"],
+      },
+      backgroundImage: {
+        hero: "url('/src/assets/hero.png')",
       },
     },
   },
