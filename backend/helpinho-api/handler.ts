@@ -1,6 +1,6 @@
 import express, { json } from "express";
 import serverless from "serverless-http";
-import appRoutes from "./src/routes/index.js";
+import appRoutes from "./src/routes/index";
 
 const app = express();
 

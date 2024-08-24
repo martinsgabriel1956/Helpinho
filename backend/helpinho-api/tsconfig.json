@@ -3,6 +3,7 @@
     "strict": true,
     "preserveConstEnums": true,
     "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "allowJs": true,
     "target": "ES2021",
@@ -12,5 +13,9 @@
       "ES2021"
     ],
     "rootDir": "./"
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "handler.js"
+  ],
 }
